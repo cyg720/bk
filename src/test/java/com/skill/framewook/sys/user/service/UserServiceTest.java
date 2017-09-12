@@ -22,8 +22,8 @@ public class UserServiceTest {
 
     @Test
     public void getUser() throws Exception {
-        User user = userService.findOneById("C1Qc9dhIJLETR83VWbJ");
-        System.out.println(user);
+        //User user = userService.findOneById("C1Qc9dhIJLETR83VWbJ");
+        //System.out.println(user);
     }
 
     @Test
