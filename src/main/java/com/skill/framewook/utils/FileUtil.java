@@ -19,8 +19,7 @@ import java.util.LinkedHashSet;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.core.io.ClassPathResource;
-import org.springframework.util.Assert;
+import org.springframework.core.io.ClassPathResource; 
 
 /**
  * @Description: 文件操作工具类
@@ -69,7 +68,7 @@ public class FileUtil {
 	 * @param basePath
 	 */
 	public static void setBasePath(String basePath) {
-		Assert.notNull(basePath);
+		//Assert.notNull(basePath);
 		if (!basePath.trim().endsWith(File.separator)) {
 			basePath += File.separator;
 		}
@@ -84,7 +83,7 @@ public class FileUtil {
 	 * @return 绝对路径
 	 */
 	public static String getAbsolutePath(String path) {
-		Assert.notNull(path);
+		//Assert.notNull(path);
 		// 在windows下，如果路径包含：,为绝对路径，则不进行转换
 		if (path.contains(":")) {
 			return path;

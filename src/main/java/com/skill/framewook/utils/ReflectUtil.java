@@ -9,6 +9,7 @@ import java.lang.reflect.Type;
 */
 public class ReflectUtil {
 
+	@SuppressWarnings("unchecked")
 	public static <T> Class<T> findParameterizedType(Class<?> clazz, int index) {
         Type parameterizedType = clazz.getGenericSuperclass();
         //CGLUB subclass target object(泛型在父类上)
