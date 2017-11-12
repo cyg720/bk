@@ -13,7 +13,11 @@ import javax.persistence.Table;
 @Table(name = "pl_user")
 public class User extends AbstractEntity {
 
-    @Column
+    
+	private static final long serialVersionUID = 1L;
+	
+	
+	@Column
     private String name;
 
     private Integer age;

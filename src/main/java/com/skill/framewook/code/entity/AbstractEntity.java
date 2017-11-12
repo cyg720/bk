@@ -14,7 +14,9 @@ import java.util.Date;
 @MappedSuperclass
 public abstract class AbstractEntity implements BaseEntity{
 
-    @Id
+	private static final long serialVersionUID = 1L;
+
+	@Id
     @GeneratedValue(generator = "hibernate-uuid")
     @GenericGenerator(name = "hibernate-uuid", strategy = "com.skill.framewook.code.entity.UUIDSequence")
     @Column(columnDefinition = "varchar(32)")
