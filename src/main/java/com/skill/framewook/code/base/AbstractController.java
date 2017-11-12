@@ -37,12 +37,12 @@ public abstract class AbstractController<M extends AbstractEntity,V extends Abst
         return new AjaxResponse(true,"删除成功");
     }
 
-    @GetMapping("/findOne/{id}")
+    /*@GetMapping("/findOne/{id}")
     @ResponseBody
     public AjaxResponse findOne(@PathVariable("id") String id) {
         M m = abstractService.findOneById(id);
         return new AjaxResponse(true, super.transformToVo(m));
-    }
+    }*/
 
     @GetMapping("/findAll")
     @ResponseBody

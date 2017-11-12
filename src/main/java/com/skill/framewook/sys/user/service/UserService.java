@@ -10,22 +10,4 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserService extends AbstractService<User>{
 
-   /* @Autowired
-    private UserDao userDao;*/
-
-    /*public User getUser(String id){
-       return userDao.findOne(id);
-    }
-
-    public User saveUser(User user){
-        return userDao.save(user);
-    }
-
-    public Page<User> getUserPage(Pageable pageable){
-        return userDao.findAll(pageable);
-    }
-
-    public Page<User> getUserPage(Example<User> example, Pageable pageable){
-        return userDao.findAll(example,pageable);
-    }*/
 }
